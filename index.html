@@ -30,24 +30,27 @@
                 <form id = "form-wrapper">
                     <div class = "form-group p-1">
                         <label for="cityInput">Search for a City:</label>
-                        <input type = "text" class = "form-control" id = "cityInput" placeholder = "San Diego">
+                        <input id="formInput" type = "text" class = "form-control" id = "cityInput" placeholder = "San Diego">
                     </div>
-                    <button type = "submit" class = "btn btn-primary mt-2">Search</button>
+                    <button id="citySubmit" type = "submit" class = "btn btn-primary mt-2">Search</button>
                 </form>
             </section> 
 
             <section class = "col-10">
                 <div class = "p-3 border border-dark">
-                    <h1>Atlanta</h1>
-                    <p>Temp: 74.01°F</p>
-                    <p>Wind: 6.67 MPH</p>
-                    <p>Humidity: 46%</p>
-                    <p>UV Index:<span>0.47</span></p>
+                    <div class = "d-flex">
+                        <h1 id="cityName">Atlanta</h1>
+                        <img id="currentIcon"></img>
+                    </div>
+                    <p id="cityTemp">Temp: 74.01°F</p>
+                    <p id="cityWind">Wind: 6.67 MPH</p>
+                    <p id="cityHumidity">Humidity: 46%</p>
+                    <p>UV Index: <span id="cityUVI" class="badge">0.47</span></p>
                 </div>
 
                 <h1>5-Day Forecast:</h1>
-                <div class = "d-flex">
-                    <div class="forecastCard">
+                <div id = "forecastContainer" class = "d-flex">
+                    <!-- <div class="forecastCard">
                         <div class = "p-3">
                             <h2>Title</h2>
                             <p>h</p>
@@ -86,12 +89,14 @@
                             <p>h</p>
                             <p>h</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
             </section>
         </section>
     </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 <script src = "./assets/js/script.js"></script> 
 </body>
 </html>
