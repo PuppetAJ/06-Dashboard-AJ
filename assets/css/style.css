@@ -1,0 +1,65 @@
+/* Legacy styles removed */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: rgb(59,108,194);
+    background: linear-gradient(90deg, rgba(59,108,194,1) 0%, rgba(36,7,87,1) 100%);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 20px; 
+}
+
+header div h1 {
+    color: white;
+    font-size: 60px;
+}
+
+#form-wrapper {
+    border-bottom: 1px solid black ;
+    padding: 0px 0px 20px 0px;
+}
+
+form label {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.form-control {
+    border: 1px solid #C1C1C1;
+    font-size: 1.5rem;
+    height: 60px;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #5BA2E9;
+    --bs-btn-hover-bg: #3859AD;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.forecastCard {
+    margin: 10px;
+    width: 20%;
+    background-color: #33475B;
+    color: white;
+}
+
+.forecastCard:first-child {
+    margin-left: 0px;
+}
+
+.forecastCard:last-child {
+    margin-right: 0px;
+}
