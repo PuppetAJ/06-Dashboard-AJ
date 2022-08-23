@@ -15,7 +15,12 @@ body {
 }
 
 p {
-    font-size: 20px; 
+    font-size: 1vw; 
+}
+
+h2 {
+    font-size: 1.5vw;
+    font-weight: bolder;
 }
 
 header div h1 {
@@ -43,6 +48,8 @@ form label {
     width: 100%;
     background-color: #5BA2E9;
     --bs-btn-hover-bg: #3859AD;
+    --bs-btn-border-color: #5BA2E9;
+    --bs-btn-hover-border-color: #3859AD;
 }
 
 .container {
@@ -51,7 +58,7 @@ form label {
 
 .forecastCard {
     margin: 10px;
-    width: 20%;
+    /* width: 20%; */
     background-color: #33475B;
     color: white;
 }
@@ -62,4 +69,22 @@ form label {
 
 .forecastCard:last-child {
     margin-right: 0px;
+}
+
+.btn-secondary {
+    width: 100%;
+    background: #B7B7B7;
+    --bs-btn-hover-bg: #a29e9e;
+    --bs-btn-border-color: #b7b7b7;
+    --bs-btn-hover-border-color: #a29e9e;
+}
+
+.btn-danger {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.btnFormat {
+    margin: 15px 0px 15px 0px;
+    width: 100%;
 }

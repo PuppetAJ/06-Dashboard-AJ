@@ -26,7 +26,7 @@
 
     <main>
         <section class = "row gx-5 m-3">  
-            <section class = "col-2">
+            <section id = "formContainer" class = "col-2">
                 <form id = "form-wrapper">
                     <div class = "form-group p-1">
                         <label for="cityInput">Search for a City:</label>
@@ -34,9 +34,15 @@
                     </div>
                     <button id="citySubmit" type = "submit" class = "btn btn-primary mt-2">Search</button>
                 </form>
+                <button id = "deleteHistory" class = "btn btn-danger btnFormat">CLEAR HISTORY</button>
+                <div id = "buttonContainer">
+                    
+                </div>
+                <!-- button history goes here -->
+
             </section> 
 
-            <section class = "col-10">
+            <section id = "dataContainer" class = "col-10">
                 <div class = "p-3 border border-dark">
                     <div class = "d-flex">
                         <h1 id="cityName">Atlanta</h1>
@@ -50,46 +56,7 @@
 
                 <h1>5-Day Forecast:</h1>
                 <div id = "forecastContainer" class = "d-flex">
-                    <!-- <div class="forecastCard">
-                        <div class = "p-3">
-                            <h2>Title</h2>
-                            <p>h</p>
-                            <p>h</p>
-                            <p>h</p>
-                        </div>
-                    </div>
-                    <div class="forecastCard">
-                        <div class = "p-3">
-                            <h2>Title</h2>
-                            <p>h</p>
-                            <p>h</p>
-                            <p>h</p>
-                        </div>
-                    </div>
-                    <div class="forecastCard">
-                        <div class = "p-3">
-                            <h2>Title</h2>
-                            <p>h</p>
-                            <p>h</p>
-                            <p>h</p>
-                        </div>
-                    </div>
-                    <div class="forecastCard">
-                        <div class = "p-3">
-                            <h2>Title</h2>
-                            <p>h</p>
-                            <p>h</p>
-                            <p>h</p>
-                        </div>
-                    </div>
-                    <div class="forecastCard">
-                        <div class = "p-3">
-                            <h2>Title</h2>
-                            <p>h</p>
-                            <p>h</p>
-                            <p>h</p>
-                        </div>
-                    </div> -->
+                <!-- forecast cards go here -->
                 </div>
 
             </section>
