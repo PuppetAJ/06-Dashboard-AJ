@@ -26,7 +26,7 @@
 
     <main>
         <section class = "row gx-5 m-3">  
-            <section id = "formContainer" class = "col-2">
+            <section id = "formContainer" class = "col-12 col-lg-3 col-xl-2">
                 <form id = "form-wrapper">
                     <div class = "form-group p-1">
                         <label for="cityInput">Search for a City:</label>
@@ -42,9 +42,9 @@
 
             </section> 
 
-            <section id = "dataContainer" class = "col-10">
+            <section id = "dataContainer" class = "col-12 col-lg-9 col-xl-10">
                 <div class = "p-3 border border-dark">
-                    <div class = "d-flex">
+                    <div id = "currentContainer" class = "d-flex">
                         <h1 id="cityName">Atlanta</h1>
                         <img id="currentIcon"></img>
                     </div>
@@ -55,10 +55,11 @@
                 </div>
 
                 <h1>5-Day Forecast:</h1>
-                <div id = "forecastContainer" class = "d-flex">
-                <!-- forecast cards go here -->
+                <div class = "col-12">
+                    <div id = "forecastContainer" class = "d-flex row">
+                        <!-- forecast cards go here -->
+                    </div>
                 </div>
-
             </section>
         </section>
     </main>
